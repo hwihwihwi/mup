@@ -1,3 +1,25 @@
 <!DOCTYPE html>
-test
+<style>
+    #content {
+        background-color: #fff;
+        color: #000;
+    }
+    .clicked{
+        background-color: #000;
+        color: #fff;
+    }
+</style>
+<div id="content">
+    <h1>MUP.CO.KR</h1>
+</div>
 </html>
+<script>
+    var content = document.querySelector("#content");
+    const clicked = "clicked";
+
+    function handleClick() {
+        content.classList.toggle(clicked);
+    };
+
+    content.addEventListener("click",handleClick);
+</script>
