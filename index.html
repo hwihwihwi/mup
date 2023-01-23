@@ -1,8 +1,14 @@
 <!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
 <style>
     html, body, h1 {
         margin:0;
         padding: 0;
+        font-family: 'Roboto', sans-serif;
     }
     .clicked{
         background-color: #000 !important;
@@ -18,7 +24,12 @@
     h1{
         font-size: 13rem;
     }
-
+    @media (max-width:600px) {
+        h1{
+            font-size: 10rem;        
+        }
+        
+    }
 </style>
 <div id="content">
     <h1>MUP.CO.KR</h1>
